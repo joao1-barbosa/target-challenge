@@ -22,11 +22,11 @@ const total  = dataNotNull.reduce((accumulator, value) => {
 const average = total / dataNotNull.length;
 
 //contagem de dias com faturamento maior que a média mensal
-let counter = 0;
-
-dataNotNull.forEach((value) => {
-    if (value.valor > average) counter++;
-});
+let counter = dataNotNull.reduce((accumulator, value) => {
+    if (value.valor > average) accumulator++;
+    
+    return accumulator;
+},0);
 
 console.log("Menor faturamento ocorreu no dia " + minValue.dia + ", no valor de " + minValue.valor);
 console.log("Maior faturamento ocorreu no dia " + maxValue.dia + ", no valor de " + maxValue.valor);
