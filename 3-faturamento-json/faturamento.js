@@ -1,6 +1,5 @@
 const jsonData = require('./dados.json');
 
-
 // retira os dias em que o faturamento foi 0
 const dataNotNull = jsonData.filter((value) => {
     return value.valor > 0;
@@ -28,7 +27,6 @@ let counter = 0;
 dataNotNull.forEach((value) => {
     if (value.valor > average) counter++;
 });
-
 
 console.log("Menor faturamento ocorreu no dia " + minValue.dia + ", no valor de " + minValue.valor);
 console.log("Maior faturamento ocorreu no dia " + maxValue.dia + ", no valor de " + maxValue.valor);
