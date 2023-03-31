@@ -8,9 +8,11 @@ As questões foram resolvidas utizando javascript vanilla e para executa-las é 
 ## 📁 Organização e como executar
 Decidi por organizar as resoluções em pastas separadas para facilitar a visualização das mesmas.
 
-Para executar os arquivos, basta abrir o terminal na pasta onde o arquivo <b>.js</b> está e executar no terminal como na imagem abaixo.
+Para executar os arquivos, basta abrir o terminal na pasta onde o arquivo <b>.js</b> está e executar o comando abaixo (substituindo o nome do arquivo no local indicado).
 
-![How to exec](https://user-images.githubusercontent.com/36737845/228058918-a6a00807-617c-438a-897a-3542c2b9591c.png)
+```
+node <nome do arquivo>.js
+```
 
 ## 🧐 Observações
 <li>Nas questões 2 e 5 optei por definir os valores das variáveis em código ao invés de pedir uma inserção do usuário.</li>
